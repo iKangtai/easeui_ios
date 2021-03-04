@@ -30,9 +30,10 @@
     self.tableView.backgroundColor = UIColor.clearColor;
     [self.view addSubview:self.tableView];
     [self.tableView Ease_remakeConstraints:^(EaseConstraintMaker *make) {
-        make.left.equalTo(self.view);
+        make.leading.equalTo(self.view);
         make.top.equalTo(self.view);
-        make.size.equalTo(self.view);
+        make.trailing.equalTo(self.view);
+        make.bottom.equalTo(self.view);
     }];
     
     [self _setupSubViews];

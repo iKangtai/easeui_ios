@@ -25,7 +25,7 @@ NS_ASSUME_NONNULL_BEGIN
 @property (nonatomic, readonly) int unreadMessagesCount; //对话中未读取的消息数量
 @property (nonatomic, readonly) long long lastestUpdateTime;
 @property (nonatomic, readonly) BOOL remindMe;
-
+/// 是否置顶
 @property (nonatomic) BOOL isTop;
 @property (nonatomic, copy, readonly) NSAttributedString *showInfo;
 //@property (nonatomic, copy) NSString *draft;

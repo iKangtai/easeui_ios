@@ -196,7 +196,7 @@ static const void *imagePickerKey = &imagePickerKey;
 
 - (void)_sendImageDataAction:(NSData *)aImageData
 {
-    EMImageMessageBody *body = [[EMImageMessageBody alloc] initWithData:aImageData displayName:@"image"];
+    EMImageMessageBody *body = [[EMImageMessageBody alloc] initWithData:aImageData displayName:[NSUUID UUID].UUIDString];
     [self sendMessageWithBody:body ext:nil];
 }
 - (void)_sendVideoAction:(NSURL *)aUrl

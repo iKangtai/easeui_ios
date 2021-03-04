@@ -26,6 +26,6 @@ Pod::Spec.new do |s|
   s.frameworks = 'UIKit'
   s.libraries = 'stdc++'
   s.dependency 'EMVoiceConvert', '~> 0.1.0'
-  s.dependency 'Hyphenate'
+  s.dependency 'HyphenateChat'
 
 end

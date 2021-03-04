@@ -19,6 +19,7 @@ NS_ASSUME_NONNULL_BEGIN
 
 - (UITableViewCell *)easeTableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath;
 
+- (UIView *)easeTableView:(UITableView *)tableView viewForHeaderInSection:(NSInteger)section;
 
 - (NSArray<UIContextualAction *> *)easeTableView:(UITableView *)tableView
            trailingSwipeActionsForRowAtIndexPath:(NSIndexPath *)indexPath
@@ -39,6 +40,8 @@ NS_ASSUME_NONNULL_BEGIN
 @interface EaseConversationsViewController : EaseBaseTableViewController
 @property (nonatomic, strong) NSMutableArray *dataAry;
 @property (nonatomic) id <EaseConversationsViewControllerDelegate> delegate;
+/// 当前聊天对象：iPad 场景下，在会话列表里用特殊状态表示当前聊天对象
+@property (nonatomic, copy) NSString *currentEaseId;
 - (instancetype)initWithModel:(EaseConversationViewModel *)aModel;
 @end
 

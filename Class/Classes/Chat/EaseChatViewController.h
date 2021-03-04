@@ -46,6 +46,8 @@ NS_ASSUME_NONNULL_BEGIN
 //停止音频播放
 - (void)stopAudioPlayer;
 
+- (NSArray *)formatMessages:(NSArray<EMMessage *> *)aMessages;
+
 @end
 
 NS_ASSUME_NONNULL_END

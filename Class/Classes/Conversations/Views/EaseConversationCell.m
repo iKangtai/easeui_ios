@@ -36,7 +36,7 @@
 {
 
     if (self = [super initWithStyle:UITableViewCellStyleDefault reuseIdentifier:identifier]){
-        self.selectionStyle = UITableViewCellSelectionStyleNone;
+//        self.selectionStyle = UITableViewCellSelectionStyleNone;
         _viewModel = viewModel;
         [self _addSubViews];
         [self _setupSubViewsConstraints];
@@ -125,7 +125,7 @@
     }];
     
     [_detailLabel Ease_remakeConstraints:^(EaseConstraintMaker *make) {
-        make.top.equalTo(weakSelf.nameLabel.ease_bottom).offset(weakSelf.viewModel.nameLabelEdgeInsets.bottom + weakSelf.viewModel.detailLabelEdgeInsets.top);
+//        make.top.equalTo(weakSelf.nameLabel.ease_bottom).offset(weakSelf.viewModel.nameLabelEdgeInsets.bottom + weakSelf.viewModel.detailLabelEdgeInsets.top);
         make.left.equalTo(weakSelf.avatarView.ease_right).offset(weakSelf.viewModel.avatarEdgeInsets.right + weakSelf.viewModel.detailLabelEdgeInsets.left + 12);
         make.bottom.equalTo(weakSelf.contentView.ease_bottom).offset(weakSelf.viewModel.detailLabelEdgeInsets.bottom - 18);
     }];
